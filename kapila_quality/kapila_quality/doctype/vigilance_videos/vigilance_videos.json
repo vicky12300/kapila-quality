@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-21 16:07:06.120375",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "video_file",
+  "video_preview"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "video_file",
+   "fieldtype": "Attach",
+   "label": "Video File"
+  },
+  {
+   "fieldname": "video_preview",
+   "fieldtype": "Code",
+   "label": "Video Preview",
+   "options": "HTML",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-21 17:52:12.131079",
+ "modified_by": "Administrator",
+ "module": "Kapila Quality",
+ "name": "Vigilance Videos",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

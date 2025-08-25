@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-21 15:53:25.754046",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tag_name_1",
+  "tag_name_2",
+  "tag_name_3",
+  "supplier_name",
+  "remark",
+  "column_break_hytj",
+  "image",
+  "truck_no",
+  "token",
+  "token_date",
+  "material",
+  "city",
+  "status",
+  "section_break_gaga",
+  "videos"
+ ],
+ "fields": [
+  {
+   "fieldname": "tag_name_1",
+   "fieldtype": "Data",
+   "label": "Tag Name 1"
+  },
+  {
+   "fieldname": "tag_name_2",
+   "fieldtype": "Data",
+   "label": "Tag Name 2"
+  },
+  {
+   "fieldname": "tag_name_3",
+   "fieldtype": "Data",
+   "label": "Tag Name 3"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text",
+   "label": "Remark",
+   "placeholder": "Give Your Remark..."
+  },
+  {
+   "fieldname": "column_break_hytj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "truck_no",
+   "fieldtype": "Data",
+   "label": "Truck No"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "label": "Token"
+  },
+  {
+   "fieldname": "token_date",
+   "fieldtype": "Date",
+   "label": "Token Date"
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Link",
+   "label": "Material",
+   "options": "Item"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "label": "City",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "section_break_gaga",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "videos",
+   "fieldtype": "Table",
+   "label": "Videos",
+   "options": "Vigilance Videos"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nApprove\nEscalate"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "HTML",
+   "label": "Image"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-21 18:59:55.295303",
+ "modified_by": "Administrator",
+ "module": "Kapila Quality",
+ "name": "Vigilance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
