@@ -4,8 +4,6 @@ frappe.ui.form.on("Vigilance", {
         show_default_image(frm);
     },
     refresh: function(frm) {
-        // Call the function to show buttons
-        show_approval_buttons(frm);
         // Bind video links with delay to ensure DOM is ready
         setTimeout(() => {
             bind_video_links(frm);
@@ -36,30 +34,6 @@ function show_default_image(frm){
     `);
 }
 
-// Function to show Approve/Escalate buttons
-function show_approval_buttons(frm) {
-    // Hide default Save / Submit buttons
-    frm.page.clear_actions();
-    // Only show buttons if status is Pending
-    if (frm.doc.status === "Pending" || !frm.doc.status) {
-        // Approve button
-        frm.add_custom_button("Approve", () => {
-            frm.set_value("status", "Approve");
-            frm.save().then(() => {
-                frappe.msgprint("Vigilance Approved!");
-                frm.reload_doc();  // refresh form to remove buttons
-            });
-        }, "");
-        // Escalate button
-        frm.add_custom_button("Escalate", () => {
-            frm.set_value("status", "Escalate");
-            frm.save().then(() => {
-                frappe.msgprint("Vigilance Escalated!");
-                frm.reload_doc(); // refresh form to remove buttons
-            });
-        }, "");
-    }
-}
 
 // Reusable function to show video popup
 function show_video_popup(file_url) {
@@ -73,7 +47,7 @@ function show_video_popup(file_url) {
     }
     let d = new frappe.ui.Dialog({
         title: "Video Preview",
-        size: "large", // Changed from "large" to "small"
+        size: "small", // Changed from "large" to "small"
         primary_action_label: "Close",
         primary_action: () => d.hide()
     });

@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LAB.########",
+ "creation": "2025-08-25 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vigilance_reference",
+  "tag_name",
+  "material",
+  "column_break_1",
+  "lab_user",
+  "test_date",
+  "column_break_gwlz",
+  "lab_remarks",
+  "section_break_parameters",
+  "parameter_ratings"
+ ],
+ "fields": [
+  {
+   "fieldname": "vigilance_reference",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Vigilance Reference",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tag_name",
+   "fieldtype": "Data",
+   "label": "Tag Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Material",
+   "options": "Item",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lab_user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lab User",
+   "options": "User",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Test Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_parameters",
+   "fieldtype": "Section Break",
+   "label": "Lab Results"
+  },
+  {
+   "fieldname": "parameter_ratings",
+   "fieldtype": "Table",
+   "options": "Vigilance Parameter Rating",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lab_remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "placeholder": "Enter your detailed remarks..."
+  },
+  {
+   "fieldname": "column_break_gwlz",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-26 16:32:41.625227",
+ "modified_by": "Administrator",
+ "module": "Kapila Quality",
+ "name": "Lab Result",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lab User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

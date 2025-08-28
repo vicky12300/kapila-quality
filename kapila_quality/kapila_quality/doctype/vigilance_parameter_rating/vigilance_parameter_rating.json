@@ -1,44 +1,36 @@
 {
  "actions": [],
- "allow_rename": 1,
- "creation": "2025-08-21 16:07:06.120375",
+ "creation": "2025-08-25 00:00:00",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "video_file",
-  "video_preview"
+  "parameter_name",
+  "expected_value"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "parameter_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name"
+   "label": "Parameter Name",
+   "reqd": 1
   },
   {
-   "fieldname": "video_file",
-   "fieldtype": "Attach",
+   "allow_in_quick_entry": 1,
+   "fieldname": "expected_value",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Video File"
-  },
-  {
-   "fieldname": "video_preview",
-   "fieldtype": "Code",
-   "label": "Video Preview",
-   "options": "HTML",
-   "read_only": 1
+   "label": "Expected Value"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-25 19:33:57.441023",
+ "modified": "2025-08-26 15:22:26.156013",
  "modified_by": "Administrator",
  "module": "Kapila Quality",
- "name": "Vigilance Videos",
+ "name": "Vigilance Parameter Rating",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

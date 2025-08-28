@@ -1,10 +1,9 @@
 # Copyright (c) 2025, Auriga IT and contributors
 # For license information, please see license.txt
 
-import frappe
-from frappe import _
+# import frappe
 from frappe.model.document import Document
 
 
-class Vigilance(Document):
-    pass
+class VigilanceTags(Document):
+	pass

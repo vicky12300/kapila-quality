@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-26 21:10:25.531958",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vigilance",
+  "tag_name",
+  "approved_by",
+  "approval_date",
+  "image__pdf"
+ ],
+ "fields": [
+  {
+   "fieldname": "vigilance",
+   "fieldtype": "Link",
+   "label": "Vigilance",
+   "options": "Vigilance"
+  },
+  {
+   "fieldname": "tag_name",
+   "fieldtype": "Data",
+   "label": "Tag Name"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Datetime",
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "image__pdf",
+   "fieldtype": "Attach",
+   "label": "Image / PDF"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-26 21:26:56.874021",
+ "modified_by": "Administrator",
+ "module": "Kapila Quality",
+ "name": "Quality Approved",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
